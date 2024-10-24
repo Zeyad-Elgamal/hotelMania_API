@@ -1,0 +1,43 @@
+\\ create Email field for users
+\\ Start reading about authentication and JWT
+\\ get a good introduction to using middleware in expressjs
+\\ test /user/login POST api endpoint with JWT token accredation
+\\ test /city GET API endpoint
+\\ What is the flow of jwt in a backend application? In a HTTP POST /login route, when the sign-in is successful, what should the response body contain? a jwt?
+\\ what is the use of auth headers if auth tokens are ultimately stored in the browser cookies?
+\\ migrate database schema to the newest prisma.schema file, which includes User.email
+\\test /user/signup POST api endpoint
+\\change userController.addCurrentValidatedUser() response to redirection after testing
+\\create users API endpoint for GET, POST
+
+Add error handling middleware/controller for misisng ids in URL or other situations: rooms, hotels, cities
+add Auth middleware which selects which filters out routes which need authorization: Extracts request.cookies.authToken and handles redirection/401 code in case of rejection
+create stored procedure to update rooms that get reserved automatically?
+create /user/updatepassword API endpoint  PUT
+Include /updatepassword POST endpoint which may require authorization, and uses prisma.user.update(), and handles redirection
+add contactUs email list table to schema
+create reservation endpoint which requires user authentication, has GET, POST methods
+finish creating the review seeds, link each review with one transaction
+test /room GET API endpoint
+set up CORS for Cross origin browser compatability
+paginate room API to get 10 at a time
+improve hotel names, add more cities
+
+
+Frontend-backend integration:
+Drop-down menu behavior and data fetched from the server in the '/' endpoint
+Routes for user login and Sign-up
+Sign-up credentials validation and return value from the server. Redirection on success? Error message from the back-end on failure?
+login validation and error message? 401 status code? Incorrect mail and password message? redirection?
+
+imageURL for room
+title field for rooms
+result of query in the homepage: list of rooms in a city related to a governate
+create user with multiple reservations to act as a template for /user endpoint, must have money paid total
+/reservation endpoint
+data
+email list/ subscriber : email  newsletter schema
+amenities routes, with roomID
+
+
+*888*200#
